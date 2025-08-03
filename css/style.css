@@ -81,6 +81,9 @@ h2{
     font: 600 2em Syne;
 
 }
+h3{
+    font: 500 1.3em Syne;
+}
 span{
     color:#fb7902;
 }
@@ -366,16 +369,25 @@ h4{
     object-fit: cover;
     align-items: center;
 }
-.aboutpage__infoceo-cv-lists-numbers div{
+.aboutpage__infoceo-cv-lists-numbers .square{
     display: flex;
     justify-content: space-around;
     border: 1px solid ;
-    margin: 50px 0;
     width: 65px;
     height: 65px;
     background-color: #1E1E1E;
     color: #fff;
     align-items: center;
+}
+
+.aboutpage__infoceo-cv-lists-numbers .line {
+    height: 45px;
+    margin: auto;
+    width: 1px;
+    background: url("../img/line.webp") 
+}
+.aboutpage__infoceo-cv-lists-numbers .line:nth-last-of-type(2) {
+    height: 40px;
 }
 .aboutpage__infoceo-cv-lists{
     display: flex;
@@ -401,7 +413,6 @@ h4{
     margin-top: 40px;
     text-align: center;
 }
-
 .aboutpage__team-top button {
     max-width: 220px;
     height: 44px;
@@ -563,7 +574,74 @@ h4{
 .makeupservices__banner-content{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
+.makeupservices__banner-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.makeupservices__banner-imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+.makeupservices__banner-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
+}
+.makeupservices__banner-bottom p{
+    font: 400 1.3em Monsterrat;
+
+}
+.makeupservices__makeup-top{
+    margin: 80px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+.makeupservices__makeup-top h2{
+    font: 600 2.5em Syne;
+    text-align: center;
+}
+.makeupservices__makeup-top button{
+    height: 54px;
+    width: 180px;
+    text-align: center;
+}
+.makeupservices__makeup-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 41px;
+}
+.makeupservices__makeup-cards img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+.makeup__price{
+    display: flex;
+    justify-content: space-between;
+}
+.makeup__price p{
+    font: 600 1.3em Monsterrat
+}
+.makeup__price h3{
+    font: 700 1.3em Syne;
+    margin-bottom:16px;
+    text-align: center;
+}
+.makeupservices__makeup-cards a{
+    font: 600 1.3em Monsterrat;
+    color: #fb7902;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 768px){
     nav{
         display: flex;
@@ -667,7 +745,6 @@ h4{
     .cardf{
       
         height: 170px;
-      
      
     }
     .cardf h3{
@@ -831,6 +908,31 @@ h4{
     .contactpage__branch-info{
         flex-direction: row;
     }
+    .makeupservices__banner-imgs{
+        flex-direction: row;
+    }
+    .makeupservices__banner-imgs img{
+        width: 50%;
+        object-fit: cover;
+    }
+    .makeupservices__banner-bottom{
+        flex-direction: row;
+        text-align: inherit;
+    }
+    .makeupservices__banner-bottom p{
+        width: 60%;
+        margin-left: auto;
+    }
+    .makeupservices__makeup-top{
+        flex-direction: row;
+        align-items: inherit
+    }
+    .makeupservices__makeup-top h2{
+        font-size: 3em;
+    }
+    .makeupservices__makeup-cards{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -947,5 +1049,8 @@ h4{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    .makeupservices__makeup-cards{
+        flex-direction: column;
     }
 }
