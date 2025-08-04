@@ -643,6 +643,56 @@ h4{
 }
 
 @media only screen and (min-width: 768px){
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100vw;
+        background: #FFFBF2;
+        padding: 40px 60px;
+        z-index: 999;
+        gap: 60px;
+        justify-content: flex-start;
+    }
+
+    .dropdown-menu h4 {
+        font: 700 1.5em Syne;
+        color: rgba(251, 121, 2, 0.6);
+    }
+
+    .dropdown-menu ul li a {
+        text-decoration: none;
+        font: 500 1.2em Montserrat;
+        color: black;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+
+    .dropdown-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-column ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dropdown-imgs img {
+        width: 160px;
+        border-radius: 6px;
+        margin-right: 15px;
+    }
+
+
     nav{
         display: flex;
         flex-direction: row;
